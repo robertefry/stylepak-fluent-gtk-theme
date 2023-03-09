@@ -1,0 +1,9 @@
+[Trigger]
+Operation = Remove
+Type = Package
+Target = fluent-gtk-theme-git
+
+[Action]
+Description = Removing stylepak GTK themes for fluent-gtk-theme-git...
+When = PreTransaction
+Exec = /etc/pacman.d/scripts/stylepak-fluent-gtk-remove.sh

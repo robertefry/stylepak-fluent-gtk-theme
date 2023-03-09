@@ -1,0 +1,10 @@
+[Trigger]
+Operation = Install
+Operation = Upgrade
+Type = Package
+Target = fluent-gtk-theme-git
+
+[Action]
+Description = Running stylepak for fluent-gtk-theme-git GTK themes...
+When = PostTransaction
+Exec = /etc/pacman.d/scripts/stylepak-fluent-gtk-install.sh
